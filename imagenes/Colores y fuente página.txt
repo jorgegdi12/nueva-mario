@@ -1,0 +1,8 @@
+Rojo C1272D
+Gris_1 E6E6E6
+Gris_2 F2F2F2
+Blanco fondo FFFFFF
+Gris footer 999999
+Fuente  de los textos y los titulos Open Sans
+Fuente  del menu solamente
+Liberation Sans
