@@ -40,12 +40,12 @@ body {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #6a6a6a;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #6a6a6a;
     text-shadow: none;
 }
 
@@ -228,7 +228,7 @@ textarea {
   color:#999;
   border: 2px solid #999;
   padding:0.3em 0.5em;
-  margin-left:0.7em;
+  margin-bottom: 1.5em;
 }
 .fondo{
   padding-top: 3em;
@@ -237,27 +237,30 @@ textarea {
   background-repeat:no-repeat;
     background-position:right top;
 }
-#inscripcion{
-  margin:1.5em 0em 1em 3em;
-  font-size: 1.5em;
-  color:#999;
-}
-#correo{
-  background-color:#C1272D;
-  padding:0.3em;
-  border: none;
-  margin-left: 0.4em;
-}
 .gris{
   color:#999;
   font-size: 1.5em;
 }
+.campo1{
+  background-color:#C1272D;
+  color:#fff !important;
+  padding:1.3em; 
+  font-size: 1.1em;
+}
+.mi-input::-webkit-input-placeholder { color: #d8d8d8; }
+.mi-input:-moz-placeholder { color: #d8d8d8; }
+.mi-input::-moz-placeholder { color: #d8d8d8; }
+.mi-input:-ms-input-placeholder { color: #d8d8d8; }
+
 #btn-enviar{
   background-color:#C1272D;
   padding:0.3em ;
   border: none;
   margin-bottom:1.5em;
   color:#fff;
+}
+#btn-enviar:hover{
+  color:#000;
 }
 #gracias{
   font-size: 2em;
