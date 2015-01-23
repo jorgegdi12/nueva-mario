@@ -43,7 +43,6 @@
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contactenos.html">Contáctenos</a></li>
@@ -54,13 +53,24 @@
       </div>
     </div>
     </header>
-    <div class="container galeria">
-      <div class="row">
-        <div class="col-lg-4 col-lg-offset-4 text-center">
-          <h1>Galería</h1>
-        </div>
-      </div>
-       <div class="row">
+    <section id="portfolio">
+        <div class="container">
+            <div class="center">
+               <h2>Portfolio</h2>
+               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+        
+
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="#" data-filter="*">Todas las galerias</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Familia</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".html">Medio Ambiente</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Deporte</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".campaña">Campaña</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".eventos">Eventos</a></li>
+            </ul><!--/#portfolio-filter-->
+
+            <div class="row">
                 <div class="portfolio-items">
                     <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
@@ -165,19 +175,46 @@
                             </div>
                         </div>          
                     </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item campaña col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="img/portfolio/recent/item1.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="img/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item eventos col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="img/portfolio/recent/item1.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="img/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
                 </div>
-       </div>
-    </div> 
+            </div>
+        </div>
+    </section><!--/#portfolio-item-->
      <footer>
        <div class="container">
          <div class="row">
-           <div class="col-xs-4">
+           <div class="col-lg-4">
              <p>Síguenos a través de: </p>
              <div class="row">
                <div class="col-lg-6">
                  <ul>
                   <li><a href="index.html">Inicio</a></li>
-                  <li><a href="index.html#sobremi">Sobre mi</a></li>
+                  <li><a href="#sobremi">Sobre mi</a></li>
                   <li><a href="galeria.html">Galería</a></li>
                   <li><a href="noticias.html">Noticias</a></li>
                  </ul>
@@ -190,7 +227,7 @@
                </div>
              </div>
            </div>
-           <div class="col-xs-4 contactos">
+           <div class="col-lg-4 contactos">
              <p><img src="imagenes/telefono_icon.png" alt="celular">
              3136615126</p>
              <p><img src="imagenes/correo_icon.png" alt="correo">
@@ -201,7 +238,7 @@
              <img src="imagenes/facebook_icon.png" alt="facebook">
              </p>
            </div>
-           <div class="col-xs-4 partido">
+           <div class="col-lg-4 partido">
              <img src="imagenes/partido_icon.png" alt="partido">
            </div>
          </div>
