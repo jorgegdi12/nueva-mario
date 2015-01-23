@@ -217,8 +217,19 @@ textarea {
   background-color: #fff;
 }
 #copa p{
-  color:#999;
   padding-top:3em; 
+}
+#copa button{
+  background-color:#C1272D;
+  border:none; 
+  padding:1em 1.5em;
+}
+#copa a{
+  color:#fff;
+  text-decoration: none;
+}
+#copa a:hover{
+  color:#000;
 }
 .borde{
   border: 2px solid #999;
@@ -228,11 +239,11 @@ textarea {
   color:#999;
   border: 2px solid #999;
   padding:0.3em 0.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.4em;
 }
 .fondo{
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   background-image: url(../imagenes/inscripcion.png);
   background-repeat:no-repeat;
     background-position:right top;
