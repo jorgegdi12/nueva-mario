@@ -35,7 +35,7 @@ textarea {
 
 body {
     font-size: 1.8em;
-    line-height: 1.1;
+    line-height: 1.3;
     font-family: 'open_sansregular';
 }
 
@@ -94,18 +94,8 @@ textarea {
   margin-top:1em;
   margin-bottom: 1em;
 }
-.navbar-collapse.collapse {
-        text-align: center; /* Set this */
-        display: block !important;
-        height: auto !important;
-        padding-bottom: 0;
-        overflow: visible !important;
-}
-.navbar-nav {
-    display: inline-block;
-    float: none;
-    margin: 0;
-}
+
+
 #menu{
   background-color: #C1272D;
   border:none;
@@ -217,7 +207,7 @@ textarea {
   background-color: #fff;
 }
 #copa p{
-  padding-top:3em; 
+  padding-top:1em; 
 }
 #copa button{
   background-color:#C1272D;
@@ -236,14 +226,15 @@ textarea {
 }
 
 #unete{
+  background-color: #fff;
   color:#999;
   border: 2px solid #999;
   padding:0.3em 0.5em;
   margin-bottom: 1.4em;
 }
 .fondo{
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   background-image: url(../imagenes/inscripcion.png);
   background-repeat:no-repeat;
     background-position:right top;
