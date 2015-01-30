@@ -54,20 +54,27 @@
           <h1>Contáctenos</h1>
         </div>
       </div>
-      <form method="post" action="enviar.php">
-      <div class="form-group">
-        <input type="text" class="form-control campo" name="nombre" placeholder="Nombre">
+      <div class="col-lg-8">
+              <form method="post" action="enviar.php">
+            <div class="form-group">
+              <input type="text" class="form-control campo" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control campo" name="telefono" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control campo" name="email" placeholder="Correo electónico">
+            </div>
+            <textarea class="form-control campo" rows="5" name="descripcion" placeholder="Descripción"></textarea>
+            <div class="form-group">
+              <button type="submit" name="enviar" class="btnenvia">Enviar</button>
+            </div>
+            </form>
+       </div>
+      <div class="col-lg-4">
+        <img class="img-responsive center-block" src="imagenes/foto_contacto.jpg" alt="contactos">
       </div>
-      <div class="form-group">
-        <input type="email" class="form-control campo" name="email" placeholder="Correo electónico">
-      </div>
-      <textarea class="form-control campo" rows="5" name="descripcion" placeholder="Descripción"></textarea>
-      <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" name="enviar" class="btnenvia">Enviar</button>
-          </div>
-      </div>
-      </form>
+      
 
     </div>
     <footer>
