@@ -124,65 +124,6 @@ if(isset($_POST['salir']))
                                           </div>
                                           <a class="btn btn-lg btn-danger btn-block" href="#">Ingresar</a>
                                 </form>
-<?php
-}
-if (isset($_GET['utcdesa'])){
-  $idorden=$_GET['utcdesa'];
-  $_SESSION['utcdesa'] = $idorden;
-  
-  $mysql = mysqli_connect("localhost", "mariomar_marin", "Marin123","mariomar_mario")or die("Error " . mysqli_error($mysql));
-  $tildes = $mysql->query("SET NAMES 'utf8'");
-  $buslider = "SELECT * FROM ordenanzas WHERE id_ordenanza=$idorden ";
-  
-  if (!$reslider = mysqli_query($mysql,$buslider))
-  {
-  die('Error: ' . mysqli_error());
-  }
-  $desa = mysqli_fetch_array($reslider);
-  echo'
-  <form role="form" action="ingord.php" enctype="multipart/form-data" method="post">
-      <div class="form-group">
-      <label>Titulo</label>
-      <input type="text" name="titulo" class="campo" value="'.$desa['titulo'].'" class="form-control">
-      </div>
-        <div class="form-group">
-            <label>Resumen</label>
-            <textarea class="form-control" rows="3" name="resumen" id="resumen" />'.$desa['resumen'].'</textarea>
-        </div>
-        <div class="form-group">
-            <label>File input</label>
-            <input type="file" name="pdf" id="pdf">
-        </div>
-      <input type="submit" name="login" id="login" value="Ingresar"class="btn btn-lg btn-danger btn-block" />
- </form>';
-
-  mysql_close($mysql);
-}
-?>
-<?php 
- $mysql = mysqli_connect("localhost", "mariomar_marin", "Marin123","mariomar_mario")or die("Error " . mysqli_error($mysql));
-  $tildes = $mysql->query("SET NAMES 'utf8'"); //Para que se muestren las tíldes     
-  
-$buslider = "SELECT id_ordenanza,titulo FROM ordenanzas";
-  
-  if (!$reslider = mysqli_query($mysql,$buslider))
-  {
-  die('Error: ' . mysql_error());
-  }
-  while($desa = mysqli_fetch_array($reslider)){
-echo'
-    <tr>
-      <td>'.$desa['titulo'].' </td>
-      <td><a class="boton" href="ordenanzas.php?utcdesa='.$desa['id_ordenanza'].'">eliminar</a></td>
-    <td><a class="boton" href="ordenanzas.php?utcdesa='.$desa['id_ordenanza'].'">Modificar</a></td>
-    </tr>';
-  }
-mysqli_close($mysql);
-echo'</table>';
-  if($_GET['delok']==1)echo "se ha eliminado correctamente";
-  if($_GET['modok']==1)echo "la modificación fue correcta";
-echo'</section>';
-?>
                             </div>
                         </div>
                         <!-- .panel-body -->
@@ -217,12 +158,12 @@ echo'</section>';
                             <!-- /.table-responsive -->
                         </div>
                         <!-- /.panel-body -->
-
-                    </div>
                     </div>
                     <!-- /.panel -->
-        </div>
-      </div>
+                </div>
+                    
+        </div><!-- row -->
+      </div><!-- .conntainer -->
     </section>
      <footer>
        <div class="container">
