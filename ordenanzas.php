@@ -26,40 +26,54 @@
     <div class="container galeria">
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4 text-center">
-          <h1>Contáctenos</h1>
+          <h1>Ordenanzas</h1>
         </div>
       </div>
-      <div class="col-lg-8">
-              <form method="post" action="enviar.php">
-            <div class="form-group">
-              <input type="text" class="form-control campo" name="nombre" placeholder="Nombre">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control campo" name="telefono" placeholder="Teléfono">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control campo" name="email" placeholder="Correo electónico">
-            </div>
-            <textarea class="form-control campo" rows="5" name="descripcion" placeholder="Descripción"></textarea>
-            <div class="form-group">
-              <button type="submit" name="enviar" class="btnenvia">Enviar</button>
-            </div>
-            </form>
-       </div>
-      <div class="col-lg-4">
-        <img class="img-responsive center-block" src="imagenes/foto_contacto.jpg" alt="contactos">
+    <?php
+  $mysql = mysqli_connect("localhost", "mariomar_marin", "Marin123","mariomar_mario")or die("Error " . mysqli_error($mysql));
+  $tildes = $mysql->query("SET NAMES 'utf8'"); //Para que se muestren las tíldes     
+  $buscar = "SELECT * FROM  ordenanzas";
+  
+  if (!$resultado = mysqli_query($mysql,$buscar))
+    {
+    die('Error: ' . mysqli_error());
+    }
+  $i=1;
+  while($rs = mysqli_fetch_array($resultado)){
+     ?>
+   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="heading<?php echo $i?>">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i?>" aria-expanded="true" aria-controls="collapse<?php echo $i?>">
+         <?php echo $rs['titulo']?>
+          </a>
+        </h4>
       </div>
-      
-
+      <div id="collapse<?php echo $i?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $i?>">
+        <div class="panel-body">
+          <?php echo $rs['resumen']?><br>
+          <a href="<?php echo $rs['pdf']?>">Ver pdf</a>
+        </div>
+      </div>
     </div>
+  </div>
+<?php 
+ $i++;
+}
+  mysqli_free_result($resultado);
+  mysqli_close($mysql);
+  ?>
+  </div>
     <footer>
-      <?php
-     include("footer.html");
+       <?php
+     include("header.html");
       ?>
      </footer>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+    <!-- gallery -->
+ </body>
 </html>

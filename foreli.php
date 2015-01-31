@@ -19,5 +19,5 @@
                         </tbody>';
             }
             mysqli_close($mysql);
-            echo $_GET['mensaje'] ;
+          
  ?> 

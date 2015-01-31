@@ -21,33 +21,9 @@
   </head>
   <body>
     <header id="encabezado">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <figure id="logo"><img class="img-responsive center-block" src="imagenes/logo_icon.png" alt="logo"></figure>
-          </div>
-          <div class="col-lg-8">
-          <nav class="navbar navbar-default" id="menu" role="navigation"> 
-             <div class="navbar-header" >
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-             </div>
-             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav text-center">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="noticias.php">Noticias</a></li>
-                <li><a href="galeria.php">Galeria</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-              </ul>
-             </div>
-          </nav>
-        </div>
-      </div>
-    </div>
+     <?php
+     include("header.html");
+      ?>
     </header>
     <!--slider-->
      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -244,43 +220,9 @@
        </div> 
      </section>
      <footer>
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-4">
-             <p>Síguenos a través de: </p>
-             <div class="row">
-               <div class="col-lg-6">
-                 <ul>
-                  <li><a href="index.html">Inicio</a></li>
-                  <li><a href="#sobremi">Sobre mi</a></li>
-                  <li><a href="galeria.html">Galería</a></li>
-                  <li><a href="noticias.html">Noticias</a></li>
-                 </ul>
-               </div>
-               <div class="col-lg-6">
-                 <ul>
-                   <li><a href="contactenos.html">Contáctenos</a></li>
-                   <li><a href="#">Links relacionados</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-           <div class="col-lg-4 contactos">
-             <p><img src="imagenes/telefono_icon.png" alt="celular">
-             3136615126</p>
-             <p><img src="imagenes/correo_icon.png" alt="correo">
-             mario.418@hotmail.com</p>
-             <p><img src="imagenes/seguir_icon.png" alt="seguir">
-             Síguenos:
-             <img src="imagenes/twitter_icon.png" alt="twittet">
-             <img src="imagenes/facebook_icon.png" alt="facebook">
-             </p>
-           </div>
-           <div class="col-lg-4 partido">
-             <img src="imagenes/partido_icon.png" alt="partido">
-           </div>
-         </div>
-       </div>
+    <?php
+     include("footer.html");
+    ?>
      </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

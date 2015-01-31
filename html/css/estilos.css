@@ -119,6 +119,9 @@ textarea {
   text-decoration: none;
   color:#000;
 }
+.carousel-inner > .item > img {
+  min-width: 100%;
+}
 #intro{
   margin: 3em 0;
   border:2px solid #E6E6E6;
@@ -297,11 +300,25 @@ footer a:hover{
   padding-top: 2em;
 }
 /*galeria*/
-
-.galeria{
+.galeria1{
   font-family: 'open_sansregular';
 } 
+.galeria1 h1{
+  border: 2px solid #999;
+  padding: 0.3em 1em;
+  color:#999;
+}
+.galeria{
+  font-family: 'open_sansregular';
+  margin-bottom: 1em;
+} 
 .galeria h1{
+  border: 2px solid #999;
+  padding: 0.3em 1em;
+  color:#999;
+  margin:1.5em 0;
+}
+.titulogal{
   border: 2px solid #999;
   padding: 0.3em 1em;
   color:#999;
@@ -312,13 +329,16 @@ footer a:hover{
 .fechanoti{
   font-size: 2em;
   color:#777;
-  padding:0.4em 0em 0em 1em; 
+   
 }
 .dianoti{
   font-size: 1.5em;
 }
 .reco{
   color:#C1272D;
+}
+.reco p{
+  font-size: 2em;
 }
 .notimg{
   margin-bottom:4em;
@@ -350,7 +370,7 @@ footer a:hover{
 }
 .btnenvia{
   background-color: #C1272D;
-  margin:2em 0 2em 15em;
+  margin:2em 0 2em 0em;
   color:#fff;
   padding:1em 1.3em;
   border: none;
