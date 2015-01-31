@@ -90,10 +90,13 @@ if(isset($_POST['salir']))
     <section class="admin">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <p><i class="icon-user isep"></i>Hola Norma</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4">
+            <p class="text-right"><i class="icon-off isep"></i><a href="#">cerrar sesión</a></p>
+          </div>
+          <div class="col-lg-4">
             <p class="text-right"><i class="icon-off isep"></i><a href="#">cerrar sesión</a></p>
           </div>
         </div>
@@ -126,8 +129,7 @@ if(isset($_POST['salir']))
                                           <input class="form-control" type="file" name="pdf" id="pdf">
                                       </div>
                                       <div class="form-group">
-                                          <label>Ingresar</label>
-                                          <input type="file"class="btn btn-lg btn-danger btn-block">
+                                          <input type="submit" name="Ingresar" value="Ingresar" class="btn btn-lg btn-danger btn-block">
                                       </div>
                                 </form>
                          <?php
@@ -137,28 +139,34 @@ if(isset($_POST['salir']))
                             ?>
                             </div>
                         </div>
+                      </div>
+                      
+                        <div class="row">
+                         <div class="col-lg-6 col-md-offset-3">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title text-center">Ordenanzas</h3>
+                              </div>
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <table class="table table-striped table-bordered table-hover">
+                                          <?php
+                                           include("foreli.php");
+                                          ?>
+                                      </table>
+                                      <a class="btn btn-lg btn-danger btn-block" href="admin.html">Volver al menu principal</a>
+                                  </div>
+                                  <!-- /.table-responsive -->
+                              </div>
+                              <!-- /.panel-body -->
+                          </div> 
+                         </div> 
+                        
                         <!-- .panel-body -->
-                        <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">Ordenanzas</h3>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover">
-                                    <?php
-                                     include("foreli.php");
-                                    ?>
-                                </table>
-                                <a class="btn btn-lg btn-danger btn-block" href="admin.html">Volver al menu principal</a>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
+
                     <!-- /.panel -->
-                </div>
-                    
+                  </div>       
         </div><!-- row -->
       </div><!-- .conntainer -->
     </section>
